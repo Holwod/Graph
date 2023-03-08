@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FE60E70-1A64-4628-B5BA-AA7A97C3B5B5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Graph</RootNamespace>
+    <AssemblyName>Graph</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Graph.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjDictionary.cs" />
+    <Compile Include="AdjLinkedList.cs" />
+    <Compile Include="AdjMatrix.cs" />
+    <Compile Include="BFSCC.cs" />
+    <Compile Include="BFSBipartitionDetection.cs" />
+    <Compile Include="BFSCycleDetection.cs" />
+    <Compile Include="Dijkstra.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="IUF.cs" />
+    <Compile Include="Kruskal.cs" />
+    <Compile Include="LeetCode1020.cs" />
+    <Compile Include="LeetCode130.cs" />
+    <Compile Include="LeetCode200.cs" />
+    <Compile Include="LeetCode695.cs" />
+    <Compile Include="LeetCode733.cs" />
+    <Compile Include="LeetCode785.cs" />
+    <Compile Include="Prim.cs" />
+    <Compile Include="RandomGraph.cs" />
+    <Compile Include="DFSGraphnr.cs" />
+    <Compile Include="BFSSingleSourcePath.cs" />
+    <Compile Include="BFSGraph.cs" />
+    <Compile Include="DFSCC.cs" />
+    <Compile Include="DFSCycleDetection.cs" />
+    <Compile Include="DFSBipartitionDetection.cs" />
+    <Compile Include="DFSSingleSourcePath.cs" />
+    <Compile Include="DFSGraph.cs" />
+    <Compile Include="IGraph.cs" />
+    <Compile Include="MyList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomQueue.cs" />
+    <Compile Include="UnionFind1.cs" />
+    <Compile Include="UnionFind2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="图的二分检测\g.png" />
+    <Content Include="图的二分检测\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的二分检测\g2.png" />
+    <Content Include="图的二分检测\g2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的存储\g.jpg" />
+    <Content Include="图的存储\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的广度优先遍历\g.png" />
+    <Content Include="图的广度优先遍历\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的深度优先遍历\g.jpg" />
+    <Content Include="图的深度优先遍历\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的深度优先遍历\g2.jpg" />
+    <Content Include="图的深度优先遍历\g2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的环检测\g.jpg" />
+    <Content Include="图的环检测\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="图的环检测\g2.jpg" />
+    <Content Include="图的环检测\g2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="带权图\g.jpg" />
+    <Content Include="带权图\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="带权图最短路径\g.jpg" />
+    <Content Include="带权图最短路径\g.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
